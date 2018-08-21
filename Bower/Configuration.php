@@ -145,7 +145,8 @@ class Configuration implements ConfigurationInterface
         $configuration = array(
             'directory' => $assetDirectory,
             'json' => $this->getJsonFile(),
-            'endpoint' => $this->getEndpoint()
+            'endpoint' => $this->getEndpoint(),
+            'registry' => $this->getEndpoint()
         );
 
         $configuration = array_filter($configuration, function($value) {
